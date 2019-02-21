@@ -5,8 +5,7 @@ $(document).ready(function() {
 	initializePage();
 
 	$(".likeBtn").click(function() {
-		//gtag("send", "event", <Category>, <Action>);
-		gtag("like", "click", <Category>, <Action>);
+		gtag("send", "event", "like", "click");
 	});
 });
 
