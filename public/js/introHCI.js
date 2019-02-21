@@ -4,8 +4,11 @@
 $(document).ready(function() {
 	initializePage();
 
-	$(".likeBtn").click(function() {
-		gtag("send", "event", "like", "click");
+	$(".likeBtn").click(function(e) {
+		e.preventDefault();
+		ga('create', 'UA-134920882-1', 'auto');
+		//gtag("send", "event", 'like', 'click');
+		ga("send", "event", 'like', 'click');
 	});
 });
 
